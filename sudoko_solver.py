@@ -55,3 +55,25 @@ def is_valid(b, value, position):
             if b[i][j] == value and (i,j) != position:
                 return False
     return True
+
+def solve_backtrack(b):
+
+    if not look_for_empty_case(b):
+        return True
+    else :
+        row, col = look_for_empty_case(b)
+
+    for i in range(1,10):
+        if is_valid(b, i, (row,col)):
+            b[row][col] = i
+            if solve_backtrack(b):
+                return True
+            b[row][col] = 0
+    return False
+
+
+
+vizualise_board(board)
+print("Solving .....")
+solve_backtrack(board)
+vizualise_board(board)
