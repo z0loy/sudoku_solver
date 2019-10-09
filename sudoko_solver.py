@@ -36,3 +36,22 @@ def look_for_empty_case(b):
                 return (i, j)  # row, col
     return None
 
+def is_valid(b, value, position):
+
+    #check column
+    for i in range(9):
+        if b[i][position[1]] == value and position[0] != i:  #check all the squares except the empty one
+            return False
+    #check row
+    for i in range(9):
+        if b[position[0]][i] == value and position[1] != i:  #check all the squares except the empty one
+            return False
+    #check intern-box
+    box_j = position[1] // 3
+    box_i = position[0] // 3
+
+    for i in range(box_i*3, box_i*3 + 3):
+        for j in range(box_j*3, box_j*3 + 3):
+            if b[i][j] == value and (i,j) != position:
+                return False
+    return True
