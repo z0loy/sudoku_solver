@@ -25,4 +25,4 @@ This function will check if the filled digit is valid or not, there is 3 things 
  2. check if the filled digit is not repeated in the row
  3. check if the filled digit is not repeated in the intern-box
  
-![GitHub Logo](/images/1.jpg)
+![GitHub Logo](./images/1.jpg)
