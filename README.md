@@ -11,3 +11,10 @@ Returning to the basic algorithm that all human apply while solving **Sudoku**, 
   4. Once the board is full, we have finished and resolved the problem.
   
  
+#Implementation
+
+##Vizualisation function
+This function quite simply helps to show us the board of sudoku, here I just used 9x9 sudoku table (we can implement any dimension for this algorithm), very easy and basic function that print a multidimensionnel table, isn't it ?
+
+##Looking for an empty case function
+In my scenario, the empty cases are the ones who have "0" value, so all we need is to loop the table until we find an empty case, and return the (row, column) values.
