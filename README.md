@@ -6,8 +6,8 @@ Returning to the basic algorithm that all human apply while solving **Sudoku**, 
   1. Look for an empty case
   2. Try to place digits (1-9) in this case
   3. Check if that digit is valid
-      -if it is valid: try to fill recursively the board (the next cases) using the previous steps (1->3)
-      -if not: reset the case, and go back to the previous step
+      - if it is valid: try to fill recursively the board (the next cases) using the previous steps (1->3)
+      - if not: reset the case, and go back to the previous step
   4. Once the board is full, we have finished and resolved the problem.
   
 
