@@ -34,4 +34,11 @@ This function will check if the filled digit is valid or not, there is 3 things 
  
   ![GitHub Logo](https://github.com/z0loy/sudoku_solver/blob/master/Images/3.jpg)
 
+The function is_valid look a little bit complicated, but in fact it's not, the given parameters are the board, the value filled in, and the position of the empty case (i,j)
+  1. first when we start checking if the value is valid relatively to the column, from the position value (exactly the column value j), we start looping for each row if the value exist there or not, if it does then return False.
+  2. respectively for the row checking.
+  3. for the intern-box checking, there is a little trick when we need to get the range of the intern-box
+    - we get the the position (i,j) of the empty case, then we divise (i/3, j/3)
+    - two loops to scroll through the intern-box (per row, per column) 
+    - return False if it does exist.
  
