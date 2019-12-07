@@ -42,3 +42,8 @@ The function is_valid look a little bit complicated, but in fact it's not, the g
     - two loops to scroll through the intern-box (per row, per column) 
     - return False if it does exist.
  
+## Solve backtrack funciton
+
+here, we'll try to use the previous funciton, and apply the backtracking algorithm.
+
+first we check if there is no empty cases (it means that the board is all filled and we're ready to finish the execution), else if there is an empty case then we get it index (row, column), then we start trying the digit (from 1 to 9) and check if the new filled value **is_valid** using our previous funciton. if it is then recursively call the **solve_backtrack** function and return True and so on ...
