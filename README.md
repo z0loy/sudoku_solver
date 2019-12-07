@@ -18,3 +18,11 @@ This function quite simply helps to show us the board of sudoku, here I just use
 
 ## Looking for an empty case function
 In my scenario, the empty cases are the ones who have "0" value, so all we need is to loop the table until we find an empty case, and return the (row, column) values.
+
+## Is valid funciton
+This function will check if the filled digit is valid or not, there is 3 things we need to check
+ 1. check if the filled digit is not repeated in the colmun
+ 2. check if the filled digit is not repeated in the row
+ 3. check if the filled digit is not repeated in the intern-box
+ 
+![GitHub Logo](/images/1.jpg)
