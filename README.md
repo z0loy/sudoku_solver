@@ -21,11 +21,17 @@ In my scenario, the empty cases are the ones who have "0" value, so all we need 
 
 ## Is valid funciton
 This function will check if the filled digit is valid or not, there is 3 things we need to check
+
  **1. check if the filled digit is not repeated in the colmun**
+ 
   ![GitHub Logo](https://github.com/z0loy/sudoku_solver/blob/master/Images/2.jpg)
+  
  **2. check if the filled digit is not repeated in the row**
+ 
  ![GitHub Logo](https://github.com/z0loy/sudoku_solver/blob/master/Images/1.jpg)
+ 
  **3. check if the filled digit is not repeated in the intern-box**
+ 
   ![GitHub Logo](https://github.com/z0loy/sudoku_solver/blob/master/Images/3.jpg)
 
  
